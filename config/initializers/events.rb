@@ -28,5 +28,5 @@ WebsocketRails.setup do |config|
 end
 
 WebsocketRails::EventMap.describe do
-  subscribe :request, "socketable_rails/socketable#request"
+  subscribe :request, "socketable#request"
 end
