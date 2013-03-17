@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "websocket-rails"
+  s.add_dependency "coffee-rails"
 end
