@@ -1,5 +1,14 @@
 source "http://rubygems.org"
 
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'jasmine'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'puma'
+  gem 'meta_request'
+end
+
 # Declare your gem's dependencies in socketable-rails.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
