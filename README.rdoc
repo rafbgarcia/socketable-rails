@@ -12,6 +12,7 @@ Add to Gemfile
 Then
     $ cd rails/app/path
     $ bundle install
+    $ rake socketable:install
     $ thin start
 
 
