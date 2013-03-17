@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     socketable-rails (0.1.2)
+      coffee-rails
       rails (~> 3.2.12)
       websocket-rails
 
@@ -48,12 +49,21 @@ GEM
       xpath (~> 1.0.0)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
+    coffee-rails (3.2.2)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.1)
     daemons (1.1.9)
     diff-lcs (1.2.1)
     em-synchrony (1.0.3)
       eventmachine (>= 1.0.0.beta.1)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     faye-websocket (0.4.7)
       eventmachine (>= 0.12.0)
     ffi (1.4.0)
