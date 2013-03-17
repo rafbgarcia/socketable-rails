@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    socketable-rails (0.1.0)
+    socketable-rails (0.1.2)
       rails (~> 3.2.12)
       websocket-rails
 
