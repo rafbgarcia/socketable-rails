@@ -2,11 +2,9 @@ source "http://rubygems.org"
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'jasmine'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
-  gem 'puma'
-  gem 'meta_request'
+  gem 'jasmine'
+  gem 'capybara'
 end
 
 # Declare your gem's dependencies in socketable-rails.gemspec.
