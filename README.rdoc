@@ -1,3 +1,51 @@
 = SocketableRails
 
-This project rocks and uses MIT-LICENSE.
+Tests coming soon.
+
+Socketable-rails uses @DanKnox Websocket-Rails gem: http://github.com/DanKnox/websocket-rails.
+
+== Installing
+
+Add to Gemfile
+    gem 'socketable-rails'
+
+Then
+    $ cd rails/app/path
+    $ bundle install
+    $ thin start
+
+
+== Using
+
+Building a realtime chat:
+
+=== message.rb
+Normal model
+  class Message < ActiveRecord::Base
+    attr_accessible :content
+  end
+
+
+=== home/index.html.erb
+You need to add a :websocket => true parameter to your form
+  <%= form_for @message, :websocket => true do |f| %>
+    <%= f.text_area :content %>
+    <button class="btn">Submit</button>
+  <% end %>
+  <div id="msgs">
+  </div>
+
+=== messages_controller.rb
+Create a function named *websocket* in your controller to handle the request
+  class MessagesController < ApplicationController
+    def websocket(params, socket)
+      message = Message.create(params[:message])
+      socket.broadcast(message, :create_message)
+    end
+  end
+
+=== javascript
+Bind the event you triggered in the controller
+  Socketable.dispatcher().bind('create_message', function(data) {
+    $('#msgs').append($('<div></div>').html(data.content));
+  });
