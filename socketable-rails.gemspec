@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["rafbgarcia@gmail.com"]
   s.homepage    = "https://github.com/rafbgarcia/socketable-rails"
   s.summary     = "Rails websocket made easy"
-  s.description = "Rails websocket"
+  s.description = "Very small and simple gem that makes using websockets really easy."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
