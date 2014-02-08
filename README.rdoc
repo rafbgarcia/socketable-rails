@@ -1,6 +1,6 @@
 = SocketableRails
 
-Socketable-rails uses @DanKnox Websocket-Rails gem: http://github.com/DanKnox/websocket-rails.
+Playing with websockets and rails
 
 == Installation
 
