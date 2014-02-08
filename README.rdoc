@@ -1,7 +1,5 @@
 = SocketableRails
 
-Tests coming soon.
-
 Socketable-rails uses @DanKnox Websocket-Rails gem: http://github.com/DanKnox/websocket-rails.
 
 == Installation
@@ -9,7 +7,7 @@ Socketable-rails uses @DanKnox Websocket-Rails gem: http://github.com/DanKnox/we
 Add to Gemfile
     gem 'socketable-rails'
 
-Then
+And
     $ cd rails/app/path
     $ bundle install
     $ rake socketable:install
@@ -50,13 +48,3 @@ Bind the event you triggered in the controller
   Socketable.dispatcher().bind('create_message', function(data) {
     $('#msgs').append($('<div></div>').html(data.content));
   });
-
-
-
-== Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
